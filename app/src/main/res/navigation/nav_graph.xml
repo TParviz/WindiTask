@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LaunchFragment">
+
+    <fragment
+        android:id="@+id/PhoneFragment"
+        android:name="tj.winditask.presentation.PhoneFragment"
+        android:label="@string/phone_fragment_label"
+        tools:layout="@layout/fragment_phone">
+        <action
+            android:id="@+id/action_PhoneFragment_to_SmsCodeFragment"
+            app:destination="@id/SmsCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SmsCodeFragment"
+        android:name="tj.winditask.presentation.SmsCodeFragment"
+        android:label="@string/sms_code_fragment_label"
+        tools:layout="@layout/fragment_sms_code">
+
+        <action
+            android:id="@+id/action_SmsCodeFragment_to_PhoneFragment"
+            app:destination="@id/PhoneFragment" />
+        <action
+            android:id="@+id/action_SmsCodeFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment"
+            app:popUpTo="@id/SmsCodeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_SmsCodeFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment"
+            app:popUpTo="@id/SmsCodeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="tj.winditask.presentation.RegisterFragment"
+        android:label="@string/register_fragment_label"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/LaunchFragment"
+        android:name="tj.winditask.presentation.LaunchFragment"
+        android:label="@string/launch_fragment_label"
+        tools:layout="@layout/fragment_launch">
+        <action
+            android:id="@+id/action_LaunchFragment_to_PhoneFragment"
+            app:destination="@id/PhoneFragment"
+            app:popUpTo="@id/LaunchFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="tj.winditask.presentation.ProfileFragment"
+        android:label="@string/profile_fragment_label"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

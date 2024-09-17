@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">WindiTask</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="phone_fragment_label">PhoneFragment</string>
+    <string name="sms_code_fragment_label">SmsCodeFragment</string>
+    <string name="register_fragment_label">RegisterFragment</string>
+    <string name="launch_fragment_label">LaunchFragment</string>
+    <string name="profile_fragment_label">ProfileFragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="action_loading">Loading…</string>
+    <string name="sms_code_confirmation">Sms Code Confirmation</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_send">Send</string>
+    <string name="updated_successfully">Data updated successfully</string>
+    <string name="action_register">Register</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="error_avatar">Update Avatar Photo</string>
+    <string name="error_name">No value passed for Name</string>
+
+    <string name="register">Register</string>
+    <string name="profile">Profile</string>
+
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_city">City</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_vk">VK</string>
+    <string name="hint_instagram">Instagram</string>
+</resources>
